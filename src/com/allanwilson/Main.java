@@ -15,5 +15,7 @@ public class Main {
         System.out.println("Number of fins: " + fish.getFins());
         System.out.println("Fish brains: " + fish.getBrain());
 
+        Vehicle vehicle = new Vehicle("Truck", 1, 1, 4, 1);
+        System.out.println("Vehicle type: " + vehicle.getType());
     }
 }
