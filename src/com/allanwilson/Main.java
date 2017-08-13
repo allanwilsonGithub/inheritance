@@ -9,7 +9,11 @@ public class Main {
         dog.walk();
         dog.run();
 
-        Fish fish = new Fish("Pike", 3, 5, 2);
+        Fish fish = new Fish("Pike", 3, 5, 2, 2, 3);
+        System.out.println("Fish gills: " + fish.getGills());
+        System.out.println("Fish eyes:" + fish.getEyes());
         System.out.println("Number of fins: " + fish.getFins());
+        System.out.println("Fish brains: " + fish.getBrain());
+
     }
 }
