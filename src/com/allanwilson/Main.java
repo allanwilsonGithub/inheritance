@@ -1,5 +1,7 @@
 package com.allanwilson;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -18,13 +20,24 @@ public class Main {
         Vehicle vehicle = new Vehicle("Truck", 1, 1, 4, 1);
         System.out.println("Vehicle type: " + vehicle.getType());
 
-        Car car = new Car("Farmari",1,1,4,1,134,5);
+        Car car = new Car("Farmari",1,1,4,1,134,5, "Left", "Reverse",120);
         System.out.println("Car seats: " + car.getSeats());
         System.out.println("Car type: " + car.getType());
 
-        skodaOctavia GreenMachine = new skodaOctavia("Family Mobile",1,1,4,1,145,5,"Highland Green", 2008);
+        skodaOctavia GreenMachine = new skodaOctavia("Family Mobile",4,1,"Reverse",157,145,"Right",5,"Highland Green", 2008, 1);
         System.out.println("GreenMachine seats: " + GreenMachine.getSeats());
         System.out.println("GreenMachine type: " + GreenMachine.getType());
         System.out.println("Greenmachine year: " + GreenMachine.getYear());
+        System.out.println("Cruise control set to: " + GreenMachine.getCruiseControl());
+        System.out.println("Increasing to 50...");
+        GreenMachine.setCruiseControl(50);
+        System.out.println("Cruise control now set to: " + GreenMachine.getCruiseControl());
+        System.out.println("The Greenmachine is steering: " + GreenMachine.getSteering());
+        GreenMachine.setSteering("Left");
+        System.out.println("The Greenmachine is steering: " + GreenMachine.getSteering());
+
+        System.out.println("Gear was: " + GreenMachine.getGear() + ".");
+        GreenMachine.setGear("Second");
+        System.out.println("Speed is: " + GreenMachine.getSpeed());
     }
 }
