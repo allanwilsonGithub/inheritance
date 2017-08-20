@@ -17,5 +17,14 @@ public class Main {
 
         Vehicle vehicle = new Vehicle("Truck", 1, 1, 4, 1);
         System.out.println("Vehicle type: " + vehicle.getType());
+
+        Car car = new Car("Farmari",1,1,4,1,134,5);
+        System.out.println("Car seats: " + car.getSeats());
+        System.out.println("Car type: " + car.getType());
+
+        skodaOctavia GreenMachine = new skodaOctavia("Family Mobile",1,1,4,1,145,5,"Highland Green", 2008);
+        System.out.println("GreenMachine seats: " + GreenMachine.getSeats());
+        System.out.println("GreenMachine type: " + GreenMachine.getType());
+        System.out.println("Greenmachine year: " + GreenMachine.getYear());
     }
 }
